@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates>
+    <t t-name="SaleOrderSystray">
+    <div class="o_weather_navbar_item">
+        <a href="#" title="Weather Info" role="button" aria-expanded="false" aria-haspopup="true"
+           class="dropdown-toggle">
+            <i id='create_so' role="img" aria-label="Climate" class="fa fa-fw fa-cloud"></i>
+        </a>
+    </div>
+    </t>
+    <!--    <t t-name="user_weather_map.weather_menu">-->
+    <!--        <li class="o_weather_navbar_item">-->
+    <!--            <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" title="Weather">-->
+    <!--                <div class="weather_board">-->
+    <!--                    <i class="fa fa-fw fa-cloud"/>-->
+    <!--                </div>-->
+    <!--            </a>-->
+    <!--            <ul class="o_weather_navbar_dropdown dropdown-menu" role="menu">-->
+    <!--                <li class="o_weather_navbar_dropdown_top">-->
+    <!--                    <div class="weather_notification"/>-->
+    <!--                </li>-->
+    <!--            </ul>-->
+    <!--        </li>-->
+    <!--    </t>-->
+</templates>
