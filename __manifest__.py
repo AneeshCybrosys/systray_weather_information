@@ -13,10 +13,6 @@
 
     'version': '15.0.1.0.0',
     'depends': ['point_of_sale'],
-
-    # 'data': [
-    #     'views/res_partner_inherit_views.xml',
-    # ],
     'assets': {
         'web.assets_qweb': [
             'systray_weather_information/static/src/xml/systray_weather_info_views.xml',
