@@ -7,17 +7,9 @@
                     <i class="fa fa-fw fa-cloud"/>
                 </div>
             </a>
-            <ul class="o_weather_navbar_dropdown dropdown-menu" role="menu">
+            <ul class="o_weather_navbar_dropdown dropdown-menu" role="menu" style="width:300px;!important">
                 <li class="o_weather_navbar_dropdown_top">
                     <div class="weather_notification"/>
-<!--                        <div class="col-md-8">-->
-<!--                            <t t-if="data">-->
-<!--                                <p>-->
-<!--                                    <t t-esc="data"/>-->
-<!--                                </p>-->
-<!--                            </t>-->
-<!--                        </div>-->
-<!--                    </div>-->
                 </li>
             </ul>
         </div>
@@ -25,6 +17,33 @@
     <t t-name="weather_details">
         <div class="weather_notification">
             <div class="col-md-8">
+                <t t-if="max_temp">
+                    <t t-if="min_temp">
+                        <p>
+                            Day <t t-esc="max_temp"/>°
+                            <i class="fa fa-long-arrow-up"/>
+                            Night <t t-esc="min_temp"/>°
+                            <i class="fa fa-long-arrow-down"/>
+                        </p>
+                    </t>
+                </t>
+                <t t-if="temp">
+                    <h1>
+                        <t t-esc="temp"/>°
+                        <t t-if="weather">
+                            <t t-esc="weather"/>
+                        </t>
+                    </h1>
+                </t>
+                <t t-if="description">
+                    <p>
+                        <t t-esc="description"/>
+                        <t t-if="name">
+                            in
+                            <t t-esc="name"/>
+                        </t>
+                    </p>
+                </t>
                 <t t-if="date_now">
                     <p>
                         <t t-esc="date_now"/>
