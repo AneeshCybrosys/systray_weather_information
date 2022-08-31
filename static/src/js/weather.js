@@ -1,9 +1,9 @@
 odoo.define('systray_weather_information.weather', function (require) {
 "use strict";
 var core = require('web.core');
+var QWeb = core.qweb;
 var SystrayMenu = require('web.SystrayMenu');
 var Widget = require('web.Widget');
-var QWeb = core.qweb;
 var ExampleWidget = Widget.extend({
    template: 'WeatherInformationSystray',
    events: {
@@ -20,7 +20,7 @@ var ExampleWidget = Widget.extend({
                       return response.json();
                     })
                     .then((data) => {
-                    console.log(data.weather[0]['icon'],"data")
+                    console.log(data.weather,"data")
                     var currentdate = new Date();
                     var datetime = "Last Updated: " + currentdate.getDate() + "/"
                         + (currentdate.getMonth()+1)  + "/"
